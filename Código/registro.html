@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer formulario para e-mails</title>
+    <link rel="stylesheet" href="../CSS/formulario.css">
+    <link rel="stylesheet" href="../CSS/estilinos.css">
+</head>
+<body background="../Imagenes/Fondos/Fondo8.png">
+    <nav class="navbar">
+        <ul>
+            <li><a href="presentacion.html">Presentacion</a></li>
+            <li><a href="generales.html">Generales</a></li>
+            <li><a href="academicos.html">Academicos</a></li>
+            <li><a href="laborales.html">Laborales</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+            <li class="menu"><a href="../index.html">Menu</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <main>
+    <form action="https://formspree.io/f/xkokpjrk" method="post">
+        <font color="white">
+        <ul>
+            <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name"/>
+            </li>
+            <li>
+                <label for="mail">Correo Electrónico:</label>
+                <input type ="email" id="mail" name="user_email"/>
+            </li>
+            <li>
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="user_message"></textarea> 
+            </li>
+            <br>
+            <input type="submit" value="enviar">
+        </ul>
+        </font>
+    </form>
+    </main>
+</body>
+</html>
