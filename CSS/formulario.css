@@ -4,6 +4,8 @@ form {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+    background-color: #383333;
+    color: white;
 }
 
 ul {
@@ -14,6 +16,7 @@ ul {
 
 form li + li {
     margin-top: 1em;
+    accent-color: #383333;
 }
 
 label {
@@ -27,15 +30,23 @@ input, textarea {
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #999;
+    background-color: black; 
+    font-weight: bold;
 }
 
 input:focus, textarea:focus {
     border-color: #000;
+    color: cyan;
 }
 
 textarea{
     vertical-align: top;
     height:5em;
+    color: white;
+}
+
+input{
+    color: white;
 }
 
 .button {
