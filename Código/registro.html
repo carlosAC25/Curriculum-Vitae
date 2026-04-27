@@ -10,7 +10,8 @@
 </head>
 <body background="../Imagenes/Fondos/Fondo8.png">
     <nav class="navbar">
-        <ul>
+        <button class="hamburguesa" id="BB">&#9776;</button>
+        <ul id="lista">
             <li><a href="presentacion.html">Presentacion</a></li>
             <li><a href="generales.html">Generales</a></li>
             <li><a href="academicos.html">Academicos</a></li>
@@ -19,12 +20,20 @@
             <li><a href="referencias.html">Referencias</a></li>
             <li class="menu"><a href="../index.html">Menu</a></li>
         </ul>
+        <script>
+            const BB = document.getElementById('BB');
+            const lista = document.getElementById('lista');
+
+            BB.addEventListener('click', () => {
+            lista.classList.toggle('active');
+            });
+        </script>
     </nav>
     <br>
     <br>
     <main>
     <form action="https://formspree.io/f/xkokpjrk" method="post">
-        <p align="center"><font color="white"><font size="+2">Registrarse</font></font></p>
+        <h2 class="registro">Registrarse</h2>
         <font color="white">
         <ul>
             <li>
@@ -45,7 +54,6 @@
         </font>
     </form>
     </main>
-
 <div id="Apartado de Lagtrain">
     <audio id="Lagtrain" src="../Sonido/LofiLagTrain.mp3" autoplay loop></audio>
     <script>

@@ -1,5 +1,3 @@
-
-
 .navbar ul {
     list-style-type: none;
     background-color: lightseagreen;
@@ -9,22 +7,121 @@
 }
 .navbar li{
     list-style-type: none;
-    color: white;
     text-align: center;
-    padding: 15px 20px;
     text-decoration: none;
     transition: background-color 0.3s;
+    border-bottom: 3px solid transparent;
+}
+.navbar li a {
+    display: block;
+    padding: 15px 16px;
+    color: #F0F0F0;
+    text-decoration: none;
 }
 
 
 .navbar li:hover {
     text-size-adjust: initial;
     background-color: aqua;
-    color: white;
-    border-bottom: 2px solid cadetblue;
+    border-bottom: 3px solid rgb(50, 84, 238);
 
 }
 
 .menu {
     margin-left: auto;
+}
+
+/* aqui empezamos con el menu de hamburguesa bien insao */
+
+@media (max-width:750px) {
+    .navbar{
+        position: relative;
+        display: flex;
+        background-color: lightseagreen;
+    }
+    .navbar ul{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 80%;
+        top: 100%;
+        left: 0;
+        background-color: rgb(28, 150, 144);
+        z-index: 999;
+
+    }
+    .navbar li{
+        border-bottom: 3px solid rgb(30, 65, 85);
+    }
+    .navbar ul.active{
+        display: flex;
+    }
+    .menu {
+        margin-left: 0;
+    }
+    .hamburguesa {
+        display: block;
+        background-color: rgba(16, 85, 81, 0.815);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        width: 25%;
+        font-size: 20px;
+    }
+
+
+}
+@media (min-width:751px){
+    .hamburguesa {
+        display: none;
+    }
+}
+
+@media (max-width:750px){
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+}
+
+/* Aqui es el apartado responsivo tilin */
+
+
+
+.derecha{
+    text-align: right;  
+}
+.derecha2{
+    margin-left: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.registro {
+    text-align: center;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+img, video, audio {
+    max-width: 90%;
+    height: auto;
+    display: block;
 }

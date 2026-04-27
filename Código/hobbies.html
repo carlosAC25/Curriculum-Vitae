@@ -10,7 +10,8 @@
 <body background="../Imagenes/Fondos/Fondo4.png" text="white">
 
     <nav class="navbar">
-        <ul>
+        <button class="hamburguesa" id="BB">&#9776;</button>
+        <ul id="lista">
             <li><a href="presentacion.html">Presentacion</a></li>
             <li><a href="generales.html">Generales</a></li>
             <li><a href="academicos.html">Academicos</a></li>
@@ -19,6 +20,14 @@
             <li><a href="registro.html">Registrarse</a></li>
             <li class="menu"><a href="../index.html">Menu</a></li>
         </ul>
+        <script>
+            const BB = document.getElementById('BB');
+            const lista = document.getElementById('lista');
+
+            BB.addEventListener('click', () => {
+            lista.classList.toggle('active');
+            });
+        </script>
     </nav>
 
         <center> <h2>Hobbies</h2>
