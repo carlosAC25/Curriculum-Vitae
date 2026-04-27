@@ -34,5 +34,20 @@
         </audio>
         <br>
 
+<div id="Apartado de Lagtrain">
+    <audio id="Lagtrain" src="../Sonido/Lofi Lagtrain.mp3" autoplay loop></audio>
+    <script>
+        const a = document.getElementById('Lagtrain');
+        window.onload = () => {
+            a.volume=0.3;
+            a.currentTime = localStorage.getItem('pos') || 0;
+            a.play();
+        };
+        window.onbeforeunload = () => {
+            localStorage.setItem('pos', a.currentTime);
+        };
+    </script>
+</div>
+
 </body>
 </html>
